@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recuperar senha</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="register-page">
+  <main class="register-card">
+    <h1>Recuperar senha</h1>
+
+    <form id="recuperar-form">
+      <label for="email">E-mail cadastrado</label>
+      <input id="email" name="email" type="email" required maxlength="254">
+      <button class="primary-button" type="submit">Enviar link</button>
+      <p id="mensagem" class="message" role="status" aria-live="polite"></p>
+    </form>
+
+    <a class="back-link" href="./login.html">Voltar ao login</a>
+  </main>
+
+  <script src="./js/recuperar-senha.js" defer></script>
+</body>
+</html>

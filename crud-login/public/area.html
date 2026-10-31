@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Área do Cliente | Sistemas</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="dashboard-page">
+  <header class="dashboard-header">
+    <a class="brand" href="/area.html" aria-label="Sistemas - início">
+      <span class="brand-mark">S</span>Sistemas
+    </a>
+    <button id="sair" class="logout-button" type="button">Sair</button>
+  </header>
+
+  <main class="dashboard-main">
+    <div class="dashboard-illustration">
+      <img src="./img/area.png" alt="Ilustração de gráficos e dados">
+    </div>
+
+    <section class="profile-card">
+      <h1>Dados da conta</h1>
+      <dl class="profile-data">
+        <div><dt>Nome:</dt><dd id="nome">Carregando...</dd></div>
+        <div><dt>E-mail:</dt><dd id="email">Carregando...</dd></div>
+      </dl>
+
+      <form id="perfil-form">
+        <label for="nome-editar">Atualizar nome</label>
+        <input id="nome-editar" name="nome" type="text" required minlength="2" maxlength="100">
+
+        <label for="email-editar">Atualizar e-mail</label>
+        <input id="email-editar" name="email" type="email" required maxlength="254">
+
+        <button class="primary-button" type="submit">Salvar alterações</button>
+      </form>
+
+      <button id="excluir-conta" class="danger-button" type="button">Excluir minha conta</button>
+      <p id="mensagem" class="message" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="./js/area.js" defer></script>
+</body>
+</html>
